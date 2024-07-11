@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,117,255,0.499124649859944) 58%, rgba(24,177,208,1) 100%);
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(224, 239, 242) 0%, rgb(224, 239, 242)40%, rgb(224, 239, 242) 100%);
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: black;
+    
+   
+}
+
+
+.navbar-nav .nav-link:hover {
+  
+   transform:  scale(1.1) ;
+   border: 2px solid rgb(232, 217, 217);
+   border-radius: 30px ;
+   
+}
+.upload-container{
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+     max-width: 87%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-left: 100px;
+    
+}
+.upload-container input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+.upload-container input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(9,94,217,1);
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.upload-container input[type="submit"]:hover {
+    background-color: rgb(52, 50, 101);
+    transform: scale(1.1);
+
+}
+.upload{
+    font-size: 25px;
+    font-weight: bold;
+    transition: rgb(94, 177, 222) 0,3s ease;
+}
+
+.left {
+    position: relative; 
+    margin-right: 20px;
+ 
+}
+
+img {
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: auto;
+    width: 70%;
+    height: 100vh;
+    border-radius: 70px ;
+   
+    
+}
+
+.model-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 28px;
+    width: 100px; 
+    height: 100px; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px; 
+
+  
+
+}
+.model-container a{
+    text-decoration: none;
+    margin-top: 60px;
+    color: black;
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.model {
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/LinearRegression.png');
+    background-size: cover;
+    background-position: center;
+    
+    border-radius: 30px;
+}
+.model:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+.model-container a:hover{
+    transform: scale(1.2);
+    text-decoration: none;
+}
+
+.model2 {
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/LogisticRegression.png');
+    background-size: cover;
+    background-position: center;
+    
+    border-radius: 30px;
+}
+.model2:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+
+
+.model3 {
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/SupportVectorMachines.jpg');
+    background-size: cover;
+    background-position: center;
+   
+    border-radius: 30px;
+}
+.model3:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+
+.model4 {
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/NaiveBayes.png');
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 30px;
+}
+.model4:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+.model5 {
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/DecisionTree.png');
+    background-size: cover;
+    background-position: center;
+   
+    border-radius: 30px;
+}
+.model5:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+.model6 {
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/RandomForest.png');
+    background-size: cover;
+    background-position: center;
+   
+    border-radius: 30px;
+}
+.model6:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+.model7 {
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/GradientBoosting.png');
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 30px;
+}
+.model7:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+
+.model8{
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/XGBoost.png');
+    background-size: cover;
+    background-position: center;
+ 
+    border-radius: 30px;
+}
+.model8:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+.model9{
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/LightGBM.png');
+    background-size: cover;
+    background-position: center;
+  
+    border-radius: 30px;
+}
+.model9:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+.model10{
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/CatBoost.png');
+    background-size: cover;
+    background-position: center;
+   
+    border-radius: 30px;
+}
+.model10:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+.model11{
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/PCA.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    border-radius: 30px;
+}
+.model11:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+.model12{
+    margin-left: 20px;
+    width:210px;
+    height: 160px;
+    background-image: url('../static/KNN.png');
+    background-size: cover;
+    background-position: center;
+  
+    border-radius: 30px;
+}
+.model12:hover {
+    transform: scale(1.14);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20);
+
+}
+
+
+footer {
+    width: 100%;
+    background-color:  rgba(2,0,36,1);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+   padding-bottom: 5px;
+  
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+footer i {
+    margin: 0px 176px; /* Adjust the margin here to reduce the gap */
+    transition: transform 0.3s ease;
+}
+
+footer i:hover {
+    transform: scale(1.5);
+}
